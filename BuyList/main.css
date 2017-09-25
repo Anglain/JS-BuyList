@@ -1,21 +1,37 @@
 .bl-background {
     background: #cdcbcb;
-    padding: 20px;
+    margin: 20px;
 }
 
 .bl-list {
     background: white;
-    margin-bottom: 10px;
+    margin: 5px;
+
+    border-radius: 8px;
 }
 
 .bl-bought {
     background: white;
+    margin: 5px;
+
+    border-radius: 8px;
 }
 
 /*Кнопки*/
 .bl-label {
-    background: #cdcbcb;
+    height: 30px;
+    background: #eeecec;
+    font-family: Calibri;
+    margin: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
-.bl-plus {
+.bl-button {
+    width: 40px;
+    height: 30px;
     background: #04a613;
+
+    border-radius: 7px;
+
+    font-size: 120%;
 }
