@@ -1,0 +1,161 @@
+body {
+    background: #cdcbcb;
+}
+
+.bl-background {
+    font-family: "Calibri";
+    font-size: 14px;
+
+    width: 100%;
+    background: #cdcbcb;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.bl-list {
+    width: 68%;
+    background: white;
+    display: inline-block;
+    border-radius: 5px;
+
+    box-sizing: border-box;
+}
+
+.bl-bought {
+    width: 30%;
+    display: inline-block;
+    background: white;
+    float: right;
+    border-radius: 5px;
+
+    box-sizing: border-box;
+}
+
+.bl-row {
+    width: 97%;
+    border-top: 1px solid #cdcbcb;
+}
+
+.bl-product {
+    align-items: center;
+    text-align: left;
+    width: 40%;
+    height: auto;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.bl-count {
+    width: 40%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.bl-buttons {
+    width: 18%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.bl-row {
+    padding: 15px;
+    vertical-align: middle;
+}
+
+/*Кнопки*/
+.bl-minus {
+    color: white;
+    background: #c80000;
+    width: 36px;
+    height: 36px;
+
+    border-radius: 18px;
+}
+
+.bl-label {
+    background-color: #cdcbcb;
+    padding: 8px;
+    border-radius: 5px;
+}
+.bl-plus {
+    color: white;
+    background: #04a613;
+    width: 36px;
+    height: 36px;
+
+    border-radius: 18px;
+}
+
+.bl-add-button {
+    background: #779dff;
+    width: 19.3%;
+    float: right;
+    padding-left: 0;
+    margin-left: 0;
+    border-left: 0;
+    height: 38px;
+
+    color: white;
+    font: 22px "Calibri";
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+.bl-bought-button{
+    background-color: #cdcbcb;
+    height: 36px;
+    width: 80px;
+    border-radius: 5px;
+}
+
+.bl-remove-button {
+    background-color: #c80000;
+    color: white;
+    height: 36px;
+    width: 36px;
+    border-radius: 5px;
+}
+
+.bl-title {
+    font: bold 20px "Calibri";
+
+    padding: 10px;
+
+    border-top: 1px solid #cdcbcb;
+}
+
+.bl-left {
+    font: normal 14px "Calibri";
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    background-color: #cdcbcb;
+    border-radius: 5px;
+}
+
+.bl-left-number {
+    text-align: center;
+    padding: 0;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+
+    color: white;
+    background-color: darkorange;
+
+    border-radius: 10px;
+
+}
+
+input {
+    width: 80%;
+    height: 32px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
