@@ -16,7 +16,7 @@ body {
 }
 
 .bl-list {
-    width: 58%;
+    width: 68%;
     background: white;
     display: inline-block;
     border-radius: 5px;
@@ -25,7 +25,7 @@ body {
 }
 
 .bl-bought {
-    width: 40%;
+    width: 30%;
     display: inline-block;
     background: white;
     float: right;
@@ -67,6 +67,7 @@ body {
 
 /*Кнопки*/
 .bl-minus {
+    color: white;
     background: #c80000;
     width: 36px;
     height: 36px;
@@ -80,6 +81,7 @@ body {
     border-radius: 5px;
 }
 .bl-plus {
+    color: white;
     background: #04a613;
     width: 36px;
     height: 36px;
@@ -113,6 +115,7 @@ body {
 
 .bl-remove-button {
     background-color: #c80000;
+    color: white;
     height: 36px;
     width: 36px;
     border-radius: 5px;
@@ -124,6 +127,30 @@ body {
     padding: 10px;
 
     border-top: 1px solid #cdcbcb;
+}
+
+.bl-left {
+    font: normal 14px "Calibri";
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    background-color: #cdcbcb;
+    border-radius: 5px;
+}
+
+.bl-left-number {
+    text-align: center;
+    padding: 0;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+
+    color: white;
+    background-color: darkorange;
+
+    border-radius: 10px;
+
 }
 
 input {
