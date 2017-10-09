@@ -347,6 +347,18 @@ body {
     border-top: 1px solid #cdcbcb;
 }
 
+.bl-title-left {
+    font: bold 20px "Calibri";
+    padding: 10px;
+    border-top: 1px solid #cdcbcb;
+}
+
+.bl-title-bought {
+    font: bold 20px "Calibri";
+    padding: 10px;
+    border-top: 1px solid #cdcbcb;
+}
+
 .bl-left {
     font: normal 14px "Calibri";
     display: inline-block;
@@ -354,6 +366,10 @@ body {
     padding: 5px;
     background-color: #cdcbcb;
     border-radius: 5px;
+}
+
+bl-left-text {
+    text-align: left;
 }
 
 .bl-left-number {
