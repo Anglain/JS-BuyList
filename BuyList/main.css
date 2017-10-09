@@ -38,6 +38,9 @@ body {
     width: 97%;
     border-top: 1px solid #cdcbcb;
 }
+.bl-input {
+    float: left;
+}
 
 .bl-product {
     align-items: center;
@@ -71,8 +74,18 @@ body {
     background: #c80000;
     width: 36px;
     height: 36px;
+    outline: none;
 
     border-radius: 18px;
+    border: solid;
+    border-width: 0;
+    border-bottom-width: 2px;
+    border-color: #880000;
+}
+
+.bl-minus:active {
+    outline: none;
+    background-color: #880000;
 }
 
 .bl-label {
@@ -85,46 +98,72 @@ body {
     background: #04a613;
     width: 36px;
     height: 36px;
+    outline: none;
 
     border-radius: 18px;
+    border: solid;
+    border-width: 0;
+    border-bottom-width: 2px;
+    border-color: #046a0d;
+}
+
+.bl-plus:active {
+    outline: none;
+    background-color: #046a0d;
 }
 
 .bl-add-button {
-    background: #779dff;
-    width: 19.3%;
+    background: #559fff;
+    width: 19.4%;
     float: right;
     padding-left: 0;
     margin-left: 0;
     border-left: 0;
     height: 38px;
+    outline: none;
 
     color: white;
     font: 22px "Calibri";
 
+    border: solid;
+    border-width: 0;
+    border-color: #4173bb;
+    border-bottom-width: 3px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+
+}
+
+.bl-add-button:active {
+    outline: none;
+    background-color: #4173bb;
 }
 
 .bl-add-button::after {
-    background: #779dff;
+    background-color: rebeccapurple;
     border-radius: 5px;
-    width: 100px;
+    width: 150px;
     height: 25px;
     margin-top: -25px;
-    margin-left: -50%;
+    margin-left: -110px;
+
     padding: 5px;
-    font: 15px "Calibri";
+    color: white;
+
+    font: 17px "Calibri";
     content: attr(data-tooltip);
     opacity: 0;
     position: absolute;
     visibility: hidden;
+    transform: scale(0.5);
     transition: all 0.4s ease-in-out;
+
 }
 
 .bl-add-button:hover::after {
     opacity: 1;
     visibility: visible;
-    transform: translateY(-30px) scale(1, 1);
+    transform: translateY(-30px) scale(1);
 }
 
 .bl-badge{
@@ -145,7 +184,7 @@ body {
     transition: all 1s ease;
 }
 
-.bl-badge:hover{
+.bl-badge:hover {
     transform: translateY(-60px);
     background-color: dodgerblue;
     border-color: dodgerblue;
@@ -157,11 +196,22 @@ body {
     padding: 20px;
 }
 
-.bl-bought-button{
+.bl-bought-button {
     background-color: #cdcbcb;
     height: 36px;
     width: 80px;
+    outline: none;
+
     border-radius: 5px;
+    border: solid;
+    border-width: 0;
+    border-bottom-width: 3px;
+    border-color: #817f7f;
+}
+
+.bl-bought-button:active {
+    outline: none;
+    background-color: #817f7f;
 }
 
 .bl-remove-button {
@@ -169,7 +219,18 @@ body {
     color: white;
     height: 36px;
     width: 36px;
+    outline: none;
+
     border-radius: 5px;
+    border: solid;
+    border-width: 0;
+    border-bottom-width: 3px;
+    border-color: #880000;
+}
+
+.bl-remove-button:active {
+    outline: none;
+    background-color: #880000;
 }
 
 .bl-title {
@@ -220,10 +281,12 @@ body {
     }
 
     .bl-buy-list {
+        display: none;
         visibility: hidden;
     }
 
     .bl-created-by {
+        padding-top: 0;
         color: black;
     }
 }
