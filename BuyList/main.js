@@ -35,19 +35,38 @@ $(function(){
 
         $node.find(".bl-unbought-button").css("display","none");
 
-        $node.find(".bl-plus").click(function() {
-            $node.find(".bl-label").fadeOut("normal", function() {
-                quantity++;
-                $quantity_label.text(quantity);
-                $quantity_label_right.text(quantity);
-                $quantity_label_bought.text(quantity);
-                if (quantity > 1) {
-                    $node.find(".bl-minus").css("opacity", "1");
-                    $node.find(".bl-minus").prop("disabled", false);
-                }
-            });
-            $node.find(".bl-label").fadeIn();
+        $node.find(".bl-product").click(function() {
+            $node.find(".bl-product").hide();
+            $node.find(".bl-name").show();
+            $node.find(".bl-name").val(title);
+            $node.find(".bl-name").focus();
         });
+
+        $node.find(".bl-name").focusout(function() {
+            title = $node.find(".bl-name").val();
+            $node.find(".bl-name").hide();
+            $node.find(".bl-product").show();
+
+            if (title.trim()){
+                $node.find(".bl-product").text(title);
+                $nodeRight.find(".bl-left-text").text(title);
+                $nodeBought.find(".bl-left-text").text(title);
+            }
+        });
+
+        $node.find(".bl-name").keydown(function(e) {
+            if (e.which === 13) {
+                title = $node.find(".bl-name").val();
+                $node.find(".bl-name").hide();
+                $node.find(".bl-product").show();
+
+                if (title.trim()){
+                    $node.find(".bl-product").text(title);
+                    $nodeRight.find(".bl-left-text").text(title);
+                    $nodeBought.find(".bl-left-text").text(title);
+                }
+            }
+        })
 
         $node.find(".bl-minus").click(function() {
             $node.find(".bl-label").fadeOut("normal", function(){
@@ -66,11 +85,18 @@ $(function(){
             $node.find(".bl-label").fadeIn();
         });
 
-        $node.find(".bl-remove-button").click(function(){
-            $node.slideUp("normal", function () {
-                $node.remove();
-                $nodeRight.remove();
+        $node.find(".bl-plus").click(function() {
+            $node.find(".bl-label").fadeOut("normal", function() {
+                quantity++;
+                $quantity_label.text(quantity);
+                $quantity_label_right.text(quantity);
+                $quantity_label_bought.text(quantity);
+                if (quantity > 1) {
+                    $node.find(".bl-minus").css("opacity", "1");
+                    $node.find(".bl-minus").prop("disabled", false);
+                }
             });
+            $node.find(".bl-label").fadeIn();
         });
 
         $node.find(".bl-bought-button").click(function(){
@@ -78,8 +104,8 @@ $(function(){
                 $node.find(".bl-bought-button").css("display","none");
                 $node.find(".bl-unbought-button").css("display","inline");
                 $node.find(".bl-remove-button").css("display","none");
-                $node.find(".bl-plus").css("display","none");
-                $node.find(".bl-minus").css("display","none");
+                $node.find(".bl-plus").css("visibility","hidden");
+                $node.find(".bl-minus").css("visibility","hidden");
                 $node.find(".bl-product").css("textDecoration","line-through");
             });
 
@@ -94,8 +120,8 @@ $(function(){
                 $node.find(".bl-bought-button").css("display","inline");
                 $node.find(".bl-unbought-button").css("display","none");
                 $node.find(".bl-remove-button").css("display","inline");
-                $node.find(".bl-plus").css("display","inline");
-                $node.find(".bl-minus").css("display","inline");
+                $node.find(".bl-plus").css("visibility","visible");
+                $node.find(".bl-minus").css("visibility","visible");
                 $node.find(".bl-product").css("textDecoration","none");
             });
 
@@ -103,6 +129,13 @@ $(function(){
             $nodeRight.show();
 
             $node.fadeIn("normal");
+        });
+
+        $node.find(".bl-remove-button").click(function(){
+            $node.slideUp("normal", function () {
+                $node.remove();
+                $nodeRight.remove();
+            });
         });
 
         $node.find(".bl-minus").css("opacity","0.5");

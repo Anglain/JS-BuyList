@@ -20,6 +20,8 @@ body {
     background: white;
     display: inline-block;
     border-radius: 5px;
+    margin-bottom: 20px;
+    margin-right: 10px;
 
     box-sizing: border-box;
 }
@@ -49,6 +51,12 @@ body {
     height: auto;
     display: inline-block;
     box-sizing: border-box;
+}
+
+.bl-name {
+    width: 39%;
+    height: auto;
+    display: inline-block;
 }
 
 .bl-count {
@@ -157,7 +165,6 @@ body {
     visibility: hidden;
     transform: scale(0.2);
     transition: all 0.2s ease-in-out;
-
 }
 
 .bl-plus:hover::after {
@@ -413,7 +420,7 @@ body {
 
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 500px) {
     .bl-list {
         width: 100%;
     }
