@@ -20,6 +20,8 @@ body {
     background: white;
     display: inline-block;
     border-radius: 5px;
+    margin-bottom: 20px;
+    margin-right: 10px;
 
     box-sizing: border-box;
 }
@@ -49,6 +51,12 @@ body {
     height: auto;
     display: inline-block;
     box-sizing: border-box;
+}
+
+.bl-name {
+    width: 39%;
+    height: auto;
+    display: inline-block;
 }
 
 .bl-count {
@@ -157,7 +165,6 @@ body {
     visibility: hidden;
     transform: scale(0.2);
     transition: all 0.2s ease-in-out;
-
 }
 
 .bl-plus:hover::after {
@@ -335,6 +342,25 @@ body {
 
 }
 
+.bl-unbought-button{
+    display: inline-block;
+    background-color: #cdcbcb;
+    height: 36px;
+    width: 90px;
+    outline: none;
+
+    border-radius: 5px;
+    border: solid;
+    border-width: 0;
+    border-bottom-width: 3px;
+    border-color: #817f7f;
+}
+
+.bl-unbought-button:active {
+    outline: none;
+    background-color: #817f7f;
+}
+
 .bl-remove-button:hover::after {
     opacity: 1;
     visibility: visible;
@@ -347,13 +373,36 @@ body {
     border-top: 1px solid #cdcbcb;
 }
 
+.bl-title-left {
+    font: bold 20px "Calibri";
+    padding: 10px;
+    border-top: 1px solid #cdcbcb;
+}
+
+.bl-title-bought {
+    font: bold 20px "Calibri";
+    padding: 10px;
+    border-top: 1px solid #cdcbcb;
+}
+
 .bl-left {
     font: normal 14px "Calibri";
     display: inline-block;
     text-align: center;
     padding: 5px;
+    margin: 2px;
     background-color: #cdcbcb;
     border-radius: 5px;
+}
+
+.bl-left-text {
+    text-align: left;
+    display: inline-block;
+}
+
+.bl-left-number {
+    text-align: center;
+    display: inline-block;
 }
 
 .bl-left-number {
@@ -371,7 +420,7 @@ body {
 
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 500px) {
     .bl-list {
         width: 100%;
     }
