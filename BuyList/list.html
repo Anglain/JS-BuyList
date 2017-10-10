@@ -11,23 +11,20 @@
 <div class="bl-background">
     <div class="bl-list">
         <div class="bl-row">
-            <div class="bl-input>"><input type="text" placeholder="Назва товару">
+            <div class="bl-input>"><input class="bl-in" type="text" placeholder="Назва товару">
             <button class="bl-add-button" data-tooltip="Додати продукт">Додати</button>
         </div></div>
     </div>
     <div class="bl-bought">
         <div class="bl-title">Залишилося</div>
-        <div class="bl-title-left">
-            <div class="bl-left">Помідори<div class="bl-left-number">1</div></div>
-            <div class="bl-left">Огірки<div class="bl-left-number">1</div></div>
-            <div class="bl-left">Маральцовка<div class="bl-left-number">1</div></div>
-        </div>
+        <div class="bl-title-left"></div>
         <div class="bl-title">Куплено</div>
         <div class="bl-title-bought"></div>
     </div>
     <div class="row-template" style="display: none;">
         <div class="bl-row">
             <div class="bl-product"></div>
+            <input class="bl-name">
             <div class="bl-count">
                 <button class="bl-minus" data-tooltip="-">-</button>
                 <span class="bl-label">1</span>
@@ -35,6 +32,7 @@
             </div>
             <div class="bl-buttons">
                 <button class="bl-bought-button" data-tooltip="Куплено">Куплено</button>
+                <button class="bl-unbought-button" >Не куплено</button>
                 <button class="bl-remove-button" data-tooltip="Х">X</button>
             </div>
         </div>
@@ -42,6 +40,12 @@
     <div class="bought-template" style="display: none;">
         <div class="bl-left">
             <div class="bl-left-text"></div>
+            <div class="bl-left-number"></div>
+        </div>
+    </div>
+    <div class="left-template" style="display: none;">
+        <div class="bl-left">
+            <div class="bl-left-text" style="text-decoration: line-through;"></div>
             <div class="bl-left-number"></div>
         </div>
     </div>
