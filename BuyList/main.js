@@ -81,10 +81,11 @@ $(function(){
                 $node.find(".bl-plus").css("display","none");
                 $node.find(".bl-minus").css("display","none");
                 $node.find(".bl-product").css("textDecoration","line-through");
-
-                $nodeBought.show();
-                $nodeRight.hide();
             });
+
+            $nodeBought.show();
+            $nodeRight.hide();
+
             $node.fadeIn("normal");
         });
 
@@ -96,10 +97,11 @@ $(function(){
                 $node.find(".bl-plus").css("display","inline");
                 $node.find(".bl-minus").css("display","inline");
                 $node.find(".bl-product").css("textDecoration","none");
-
-                $nodeBought.hide();
-                $nodeRight.show();
             });
+
+            $nodeBought.hide();
+            $nodeRight.show();
+
             $node.fadeIn("normal");
         });
 
@@ -135,6 +137,5 @@ $(function(){
 
     addItem("Печиво");
     addItem("Шоколад");
-    addItem("Вафлі");
-    addItem("Яблочкі");
+    addItem("Яблука");
 });
