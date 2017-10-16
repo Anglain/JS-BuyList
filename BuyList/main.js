@@ -66,7 +66,7 @@ $(function(){
                     $nodeBought.find(".bl-left-text").text(title);
                 }
             }
-        })
+        });
 
         $node.find(".bl-minus").click(function() {
             $node.find(".bl-label").fadeOut("normal", function(){
